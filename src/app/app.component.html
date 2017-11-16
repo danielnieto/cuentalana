@@ -7,23 +7,39 @@
     <div class="container-fluid">
         <div class="columns">
             <div class="column">
-                <div class="box is-radiusless">
-                    <h2 class="title">Billetes</h2>
-                    <div class="field" *ngFor="let denomination of bills">
-                        <label class="label has-text-weight-light">{{denomination.value | currency:'USD':true:'1.0-2'}}</label>
-                        <div class="control">
-                            <input class="input has-text-weight-light" type="tel" [(ngModel)]="denomination.quantity">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title is-size-5">
+                            Billetes
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <div class="field" *ngFor="let denomination of bills">
+                                <label class="label has-text-weight-light">{{denomination.value | currency:'USD':true:'1.0-2'}}</label>
+                                <div class="control">
+                                    <input class="input has-text-weight-light" type="tel" [(ngModel)]="denomination.quantity">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="column">
-                <div class="box is-radiusless">
-                    <h2 class="title">Monedas</h2>
-                    <div class="field" *ngFor="let denomination of coins">
-                        <label class="label has-text-weight-light">{{denomination.value | currency:'USD':true:'1.0-2'}}</label>
-                        <div class="control">
-                            <input class="input has-text-weight-light" type="tel" [(ngModel)]="denomination.quantity">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title is-size-5">
+                            Monedas
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <div class="field" *ngFor="let denomination of coins">
+                                <label class="label has-text-weight-light">{{denomination.value | currency:'USD':true:'1.0-2'}}</label>
+                                <div class="control">
+                                    <input class="input has-text-weight-light" type="tel" [(ngModel)]="denomination.quantity">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
