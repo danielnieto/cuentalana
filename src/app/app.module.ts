@@ -4,11 +4,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
+import { OnlyNumberDirective } from './only-number.directive';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OnlyNumberDirective
   ],
   imports: [BrowserModule, BrowserAnimationsModule, FormsModule],
   providers: [],
