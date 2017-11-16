@@ -18,7 +18,7 @@
                             <div class="field" *ngFor="let denomination of bills">
                                 <label class="label has-text-weight-light">{{denomination.value | currency:'USD':true:'1.0-2'}}</label>
                                 <div class="control">
-                                    <input appOnlyNumber class="input has-text-weight-light" type="number" [(ngModel)]="denomination.quantity" placeholder="0" #inputElement (focus)="inputElement.select()">
+                                    <input appOnlyNumber class="input has-text-weight-light" min="0" type="number" [(ngModel)]="denomination.quantity" placeholder="0" #inputElement (focus)="inputElement.select()">
                                 </div>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                             <div class="field" *ngFor="let denomination of coins">
                                 <label class="label has-text-weight-light">{{denomination.value | currency:'USD':true:'1.0-2'}}</label>
                                 <div class="control">
-                                    <input appOnlyNumber class="input has-text-weight-light" type="number" [(ngModel)]="denomination.quantity" placeholder="0" #inputElement (focus)="inputElement.select()">
+                                    <input appOnlyNumber class="input has-text-weight-light" min="0" type="number" [(ngModel)]="denomination.quantity" placeholder="0" #inputElement (focus)="inputElement.select()">
                                 </div>
                             </div>
                         </div>
