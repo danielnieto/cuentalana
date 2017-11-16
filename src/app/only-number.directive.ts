@@ -19,8 +19,8 @@ export class OnlyNumberDirective {
             (e.keyCode === 67 && e.ctrlKey === true) ||
             // Allow: Ctrl+X
             (e.keyCode === 88 && e.ctrlKey === true) ||
-            // Allow: home, end, left, right
-            (e.keyCode >= 35 && e.keyCode <= 39)
+            // Allow: home, end, left, right, up and down
+            (e.keyCode >= 35 && e.keyCode <= 40)
         ) {
             // let it happen, don't do anything
             return;
